@@ -1,5 +1,9 @@
 import printMe from './print.js';
+var m = require("mithril");
+var MyComponent = require("./mycomponent");
+var UserList = require("./views/UserList");
 
+/*
 function component() {
   const element = document.createElement('div');
   const btn = document.createElement('button');
@@ -13,4 +17,6 @@ function component() {
   return element;
 }
 
-document.body.appendChild(component());
+document.body.appendChild(component());*/
+
+m.mount(document.body, UserList);
